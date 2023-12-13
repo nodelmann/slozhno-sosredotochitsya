@@ -1,2 +1,3 @@
 # slozhno-sosredotochitsya
-Проект "Сложно сосредоточиться"
+Проект "Сложно сосредоточиться" 
+https://github.com/nodelmann/slozhno-sosredotochitsya
