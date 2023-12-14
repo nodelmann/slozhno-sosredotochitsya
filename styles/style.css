@@ -12,7 +12,7 @@ body {
 }
 
 .page {
-  font-family: var(--font-family), Arial, Helvetica, monospace, serif;
+  font-family: var(--font-family), monospace, serif;
   font-size: var(--font-size);
   display: grid;
   gap: 40px;
@@ -26,6 +26,7 @@ body {
   grid-template-rows: 1fr min-content 1fr;
   align-items: center;
   min-height: 668px;
+  height: 100vh;
   width: 100%;
   padding: 10px;
 }
@@ -41,7 +42,6 @@ body {
 
   .header {
     min-height: 768px;
-    padding: 20px;
   }
 }
 
@@ -49,6 +49,7 @@ body {
   position: absolute;
   display: flex;
   align-items: center;
+  text-transform: uppercase;
   gap: 10px;
   inset-inline-end: 0;
   inset-block-start: 0;
@@ -141,6 +142,7 @@ body {
   color: var(--theme-switch-color);
   text-transform: lowercase;
   background-color: transparent;
+  border: 1px solid transparent;
   cursor: pointer;
 }
 
@@ -151,15 +153,15 @@ body {
 }
 
 .header__theme-menu-button:hover {
-  outline: 1px solid var(--theme-switch-color);
+  outline: 1px solid var(--menu-hover-color);
 }
 
 .header__theme-menu-button:focus {
-  border-bottom: 1px solid var(--theme-switch-color);
+  border-block-end: 1px solid var(--theme-switch-color);
 }
 
 .header__theme-menu-button:focus-visible {
-  border-bottom: 1px solid var(--theme-switch-color);
+  border-block-end: 1px solid var(--theme-switch-color);
 }
 
 .title-decor {
@@ -180,14 +182,14 @@ body {
 @media (min-width: 768px) {
 
   .header__heading {
-    margin: 20px 0 0 -20px;
+    margin: 0 0 0 -20px;
   }
 }
 
 @media (min-width: 1024px) {
 
   .header__heading {
-    margin: 45px 0 0 -20px;
+    margin: 0 0 0 -20px;
     font-size: var(--accent-heading-fs-desktop);
   }
 }
@@ -209,7 +211,7 @@ body {
 .main {
   display: grid;
   gap: 50px;
-  padding: 10px;
+  padding: 0 10px;
 }
 
 @media (min-width: 768px) {
@@ -299,7 +301,7 @@ body {
 
 @media (min-width: 1024px) {
 
-  .middle-section .section__list{
+  .middle-section .section__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -311,11 +313,22 @@ body {
   gap: 10px;
 }
 
+.gallery__list {
+  display: grid;
+  gap: 10px;
+}
+
+.gallery__item {
+  display: block;
+}
+
 .gallery__img {
+  display: block;
   inline-size: 100%;
   block-size: 100%;
   object-fit: cover;
   object-position: center;
+  height: 100%;
 }
 
 @media (min-width: 768px) {
@@ -354,6 +367,7 @@ body {
     grid-column: 2 / 4;
     grid-row: 3 / 4;
   }
+
 }
 
 .footer {
