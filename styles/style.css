@@ -142,7 +142,6 @@ body {
   color: var(--theme-switch-color);
   text-transform: lowercase;
   background-color: transparent;
-  border: 1px solid transparent;
   cursor: pointer;
 }
 
