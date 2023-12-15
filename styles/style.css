@@ -58,6 +58,10 @@ body {
   right: 20px;
 }
 
+.page.theme_light .header__decor, .page.theme_light .header__decor::after {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .header__decor {
     top: 22px;
@@ -188,7 +192,6 @@ body {
 @media (min-width: 1024px) {
 
   .header__heading {
-    margin: 0 0 0 -20px;
     font-size: var(--accent-heading-fs-desktop);
   }
 }

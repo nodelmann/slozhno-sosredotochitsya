@@ -44,4 +44,8 @@
     --accent-heading-fs-desktop: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     --cover-image: url(../images/cover-image-light.png);
   }
+
+  .header__decor, .header__decor::after {
+    display: none;
+  }
 }
